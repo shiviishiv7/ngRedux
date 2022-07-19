@@ -1,0 +1,9 @@
+<div class="name">
+    <label for="name">Name</label>
+    <input type="text" [(ngModel)]="todo.name">
+</div>
+<div class="description">
+    <label for="description">Description</label>
+    <input type="text" [(ngModel)]="todo.description">
+</div>
+<button (click)="submit()" [disabled]="todo.name=='' || todo.description==''">Submit</button>

@@ -1,0 +1,21 @@
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Staus</th>
+        <th>USER ID</th>
+        <th>Create_on</th>
+        <th>update_on</th>
+    </tr>
+    <tr>
+        <td>{{todo.id}}</td>
+        <td>{{todo.name}}</td>
+        <td>{{todo.status}}</td>
+        <td>{{todo.userId}}</td>
+        <td>{{todo.create_on}}</td>
+        <td>{{todo.update_on}}</td>
+        <button (click)="updateTodo(todo.name)">Mark Completed</button>
+
+        <button (click)="deleteTodo(todo.name)">deleteTodo</button>
+    </tr>
+</table>
